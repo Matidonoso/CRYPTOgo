@@ -4,7 +4,7 @@ An assistant for crypto investors using ML.
 
 # Pipeline
 
-1.- Take the data of the cryptocurrencies from CryptoCompare.
+1.- Take the data of the cryptocurrencies from CryptoCompare API.
 
 2.- Data Normalization.
 
