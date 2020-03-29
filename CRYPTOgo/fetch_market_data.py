@@ -27,3 +27,4 @@ def get_historical_hourly_price(
     data_frame = data_frame.set_index('time')
 
     return data_frame
+

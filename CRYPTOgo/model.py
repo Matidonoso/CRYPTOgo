@@ -1,4 +1,15 @@
-import fetch_market_data
+import tensorflow as tf
+from tensorflow import keras
+import matplotlib.pyplot as plt
 
-TIME_DELTA = 1
-hours = 80 * 24 #DAYS PER HOURS
+
+def prediction( series ):
+    new_model = tf.keras.models.load_model('model.h5')
+    
+    #Evaluate this model
+    #loss, acc = model.evaluate(test_images,  test_labels, verbose=2)
+    #print("Restored model, accuracy: {:5.2f}%".format(100*acc))
+
+    prediction = new_model.predict(series)
+    
+    return prediction
